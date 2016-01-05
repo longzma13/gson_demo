@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.v("debug",response.toString());
                 EbookController ebookController = GsonHelper.getInstance().getObjectfromJson(response.toString(),EbookController.class);
                 for(Ebook ebook : ebookController.getEbooks()){
-                    Log.v("debug","After ebook:" +ebook.getEbook_name());
+                    Log.v("debug","name ebook:" +ebook.getEbook_name());
                 }
             }
         });
